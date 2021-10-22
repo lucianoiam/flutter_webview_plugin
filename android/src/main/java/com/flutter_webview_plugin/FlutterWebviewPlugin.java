@@ -35,14 +35,14 @@ public class FlutterWebviewPlugin implements FlutterPlugin, ActivityAware, Metho
     private static final String CHANNEL_NAME = "flutter_webview_plugin";
     private static final String JS_CHANNEL_NAMES_FIELD = "javascriptChannelNames";
 
-    public static void registerWith(PluginRegistry.Registrar registrar) {
+    /*public static void registerWith(PluginRegistry.Registrar registrar) {
         if (registrar.activity() != null) {
             channel = new MethodChannel(registrar.messenger(), CHANNEL_NAME);
             final FlutterWebviewPlugin instance = new FlutterWebviewPlugin(registrar.activity(), registrar.activeContext());
             registrar.addActivityResultListener(instance);
             channel.setMethodCallHandler(instance);
         }
-    }
+    }*/
 
     public FlutterWebviewPlugin() {}
 
